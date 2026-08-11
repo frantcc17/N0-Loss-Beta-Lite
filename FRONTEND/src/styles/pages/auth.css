@@ -1,0 +1,16 @@
+/* pages/auth.css — Login y registro. */
+
+.auth { justify-content: center; padding: 0 28px; }
+.title { font-family: var(--font-display); font-size: 26px; font-weight: 700; letter-spacing: -.5px; margin: 0 0 6px; }
+.sub { font-size: 15px; color: var(--muted); margin: 0 0 32px; }
+
+.fields { display: flex; flex-direction: column; gap: 12px; }
+.fields input {
+  width: 100%; background: var(--card); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px; padding: 16px; font-size: 15px; color: var(--text); font-family: inherit;
+}
+.fields input::placeholder { color: var(--faint); }
+.fields input:focus { outline: none; border-color: rgba(94,233,181,.5); }
+
+.forgot { text-align: right; margin: 12px 0 24px; font-size: 13px; }
+.switch { text-align: center; margin-top: 22px; font-size: 14px; color: var(--muted); }
