@@ -1,0 +1,2 @@
+/* pages/profile.css — Cabecera del perfil. */
+.profile-head { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; }
