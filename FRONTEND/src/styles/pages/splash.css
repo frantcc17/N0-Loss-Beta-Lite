@@ -1,0 +1,10 @@
+/* pages/splash.css — Pantalla de bienvenida. */
+
+.splash { align-items: center; justify-content: center; gap: 14px; position: relative; }
+.tagline { font-size: 14px; color: var(--muted); letter-spacing: .4px; }
+
+.loadbar { width: 120px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.08); margin-top: 28px; overflow: hidden; }
+.loadbar-fill { height: 100%; border-radius: 2px; background: var(--accent); animation: loadbar 2s ease forwards; }
+@keyframes loadbar { from { width: 8%; } to { width: 100%; } }
+
+.splash-foot { position: absolute; bottom: 48px; font-size: 11px; color: var(--faint); letter-spacing: 1px; }
