@@ -1,0 +1,25 @@
+/* index.css — Punto de entrada de estilos.
+   Importa los parciales en orden: primero los tokens (variables),
+   luego la base, y después componentes y páginas.
+   El orden importa: tokens y base deben ir antes que el resto. */
+
+/* Fundamentos */
+@import './tokens.css';
+@import './base.css';
+@import './buttons.css';
+
+/* Componentes */
+@import './components/logo.css';
+@import './components/user.css';
+@import './components/card.css';
+@import './components/movement.css';
+@import './components/menu.css';
+@import './components/tabbar.css';
+@import './components/sheet.css';
+@import './components/toast.css';
+
+/* Páginas */
+@import './pages/splash.css';
+@import './pages/auth.css';
+@import './pages/dashboard.css';
+@import './pages/profile.css';
