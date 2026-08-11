@@ -1,0 +1,17 @@
+/* tokens.css — Variables de diseño (colores, radios, tipografías). */
+:root {
+  --bg: #0C0F0E;
+  --card: #131816;
+  --card-2: #0C0F0E;
+  --sheet: #141A17;
+  --border: rgba(255, 255, 255, .07);
+  --text: #E8EDEA;
+  --muted: rgba(232, 237, 234, .55);
+  --faint: rgba(232, 237, 234, .35);
+  --accent: #5EE9B5;
+  --accent-ink: #08120D;
+  --danger: #F49B9B;
+  --radius: 20px;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+}
