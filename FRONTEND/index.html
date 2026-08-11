@@ -1,26 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N0Loss — Beta</title>
-  <meta name="description" content="Ahorro con premios semanales. Tu capital intacto: solo el rendimiento financia los sorteos." />
-
-  <!-- Tipografías de marca -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Estilos globales (los CSS de cada componente los inyecta su propio JS) -->
-  <link rel="stylesheet" href="./styles/global.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>N0Loss — Ahorra sin perder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
-  <!-- Raíz de la aplicación: App.js monta aquí navbar, sidebar y la página activa -->
-  <div id="app" class="app"></div>
+  <!-- Toda la interfaz se monta dinámicamente dentro de #app -->
+  <div id="app"></div>
 
-  <!-- Capa para modales y toasts -->
-  <div id="overlay-root"></div>
-
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
