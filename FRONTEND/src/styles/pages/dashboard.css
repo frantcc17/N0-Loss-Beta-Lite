@@ -1,0 +1,4 @@
+/* pages/dashboard.css — Cabecera del dashboard. */
+
+.dash-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
+.hello { font-size: 13px; color: var(--muted); }
