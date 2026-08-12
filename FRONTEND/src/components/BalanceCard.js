@@ -1,4 +1,4 @@
-/ components/BalanceCard.js — Tarjeta de saldo total con acciones.
+// components/BalanceCard.js — Tarjeta de saldo total con acciones.
 import { el } from '../core/dom.js';
 import { store } from '../state.js';
 import { money } from '../core/format.js';
