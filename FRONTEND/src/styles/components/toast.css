@@ -1,0 +1,7 @@
+/* components/toast.css — Notificación efímera. */
+.toast {
+  position: fixed; left: 24px; right: 24px; bottom: 110px; z-index: 20;
+  max-width: 430px; margin: 0 auto;
+  background: #1C2420; border: 1px solid rgba(94,233,181,.3); border-radius: 14px;
+  padding: 14px 18px; font-size: 13.5px; text-align: center; animation: fade .3s ease;
+}
