@@ -1,0 +1,16 @@
+/* components/menu.css — Menú de opciones del perfil y pie de versión. */
+
+.menu {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden; margin-bottom: 14px;
+}
+.menu-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 18px; border-bottom: 1px solid rgba(255,255,255,.05);
+  font-size: 14.5px; cursor: pointer;
+}
+.menu-item:last-child { border-bottom: none; }
+.menu-item:hover { background: #171D1A; }
+.menu-item .chev { color: var(--faint); font-size: 14px; }
+
+.version { text-align: center; margin-top: 20px; font-size: 11.5px; color: rgba(232,237,234,.3); }
