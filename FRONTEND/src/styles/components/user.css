@@ -1,0 +1,11 @@
+/* components/user.css — Nombre de usuario y avatar (compartidos por
+   dashboard y perfil). */
+
+.username { font-family: var(--font-display); font-size: 20px; font-weight: 600; }
+
+.avatar {
+  width: 38px; height: 38px; border-radius: 50%; background: #1A211E;
+  border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; color: var(--accent); cursor: pointer;
+}
+.avatar.lg { width: 56px; height: 56px; font-size: 20px; cursor: default; }
