@@ -1,4 +1,30 @@
-/* pages/dashboard.css — Cabecera del dashboard. */
+/* pages/dashboard.css — Disposición de la información del dashboard
+   (ahorro, rendimiento, acciones) con el DISEÑO ORIGINAL. */
 
-.dash-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
-.hello { font-size: 13px; color: var(--muted); }
+.dash-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; }
+
+/* Bloque de ahorro (sin borde, directo sobre el fondo) */
+.eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 1.5px; color: var(--muted); }
+.balance {
+  font-family: var(--font-display); font-weight: 700; color: var(--text);
+  font-size: 46px; line-height: 1.05; letter-spacing: -1px; margin-top: 8px;
+}
+.balance .cents { font-size: .5em; color: var(--faint); }
+
+.assurance { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.pill-safe {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--accent); font-size: 13px; font-weight: 600;
+  background: rgba(94, 233, 181, .08); border: 1px solid rgba(94, 233, 181, .3);
+  border-radius: 999px; padding: 8px 14px;
+}
+.assurance-note { color: var(--muted); font-size: 14px; }
+
+/* Rendimiento generado */
+.yield { display: flex; align-items: flex-start; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
+.yield-arrow { color: var(--accent); flex-shrink: 0; margin-top: 1px; }
+.yield-amt { color: var(--accent); font-weight: 600; font-size: 14.5px; }
+.yield-note { color: var(--muted); font-size: 13.5px; line-height: 1.4; flex: 1; min-width: 60%; }
+
+/* Acciones al fondo de la pantalla */
+.dash-actions { margin-top: auto; display: flex; flex-direction: column; gap: 12px; padding-top: 26px; }
