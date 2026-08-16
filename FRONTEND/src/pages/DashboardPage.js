@@ -8,6 +8,7 @@ import { Avatar } from '../components/Avatar.js';
 import { BalanceCard } from '../components/BalanceCard.js';
 import { DrawCard } from '../components/DrawCard.js';
 import { Button } from '../components/Button.js';
+import { MovementList } from '../components/MovementList.js';
 import { navigate } from '../core/router.js';
 import { openSheet } from '../components/Sheet.js';
 
@@ -34,3 +35,25 @@ export function DashboardPage() {
       <span class="yield-note">generados este mes para el bote · tu capital no se toca</span>
     </div>
   `));
+
+  // Movimientos recientes.
+  screen.appendChild(el(`<h2 class="section-title">Movimientos</h2>`));
+  screen.appendChild(MovementList());
+
+  // Acciones: depositar / retirar (abren el bottom sheet).
+  const actions = el(`<div class="dash-actions"></div>`);
+  actions.appendChild(Button({
+    label: 'Depositar',
+    id: 'btn-deposit',
+    onClick: () => openSheet('dep'),
+  }));
+  actions.appendChild(Button({
+    label: 'Retirar',
+    variant: 'ghost',
+    id: 'btn-withdraw',
+    onClick: () => openSheet('ret'),
+  }));
+  screen.appendChild(actions);
+
+  return screen;
+}
