@@ -1,13 +1,16 @@
-// config.js — Constantes de la aplicación (valores que no cambian en runtime)
+/ config.js — Constantes de la aplicación.
 export const CONFIG = {
-  defaultUserName: 'Dylan',
-  weeklyPrize: 12480,
+  defaultUserName: 'Miguel',   // el avatar muestra la inicial: "M"
+  weeklyPrize: 4120,           // bote estimado
+  monthlyYield: 16.80,         // rendimiento generado este mes
+  odds: '1 / 200',             // probabilidad
+  drawHour: 21,                // hora del sorteo del viernes (21:00)
   splashMs: 2300,
   ticketValue: 10,
 };
 
-// Importes rápidos que ofrece el sheet de depositar / retirar
-export const AMOUNTS = [10, 50, 100, 250];
+// Importes rápidos del sheet de aportar / retirar
+export const AMOUNTS = [50, 100, 250, 500];
 
 // Opciones del menú de perfil
 export const MENU_ITEMS = [
