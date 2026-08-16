@@ -1,4 +1,4 @@
-/ config.js — Constantes de la aplicación.
+// config.js — Constantes de la aplicación.
 export const CONFIG = {
   defaultUserName: 'Miguel',   // el avatar muestra la inicial: "M"
   weeklyPrize: 4120,           // bote estimado
